@@ -1,0 +1,198 @@
+.footer {
+    font-family: 'Proxima Nova Bold';
+    color: $white;
+    .container-fluid {
+        padding: 0;
+    }
+    &__inner {
+        margin: 0 auto;
+        display: flex;
+        position: relative;
+    }
+    &__general {
+        background: $grey;
+        width: 831px;
+        height: 520px;
+        padding: 50px 51px 15px;
+        display: flex;   
+        flex-direction: column;  
+        justify-content: space-between;
+    }
+    &__general-center {
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: auto;
+    }
+    &__logo {
+        width: 100%;
+        margin: 0 0 50px 0;
+        padding: 0;
+    }
+    &__menu-product-list {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+    }
+    &__menu-product-link {
+        font-size: 18px;
+        line-height: 125%;
+        text-transform: uppercase;
+        position: relative;
+        padding-left: 20px;
+    }
+    &__menu-product-link::before {
+        position: absolute;
+        content: "";
+        width: 14px;
+        height: 2px;
+        background-color: $green;
+        left: 0;
+        top: 50%;
+    }
+    &__menu {
+        margin-left: 55px;
+    }
+    &__menu-list {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+    }
+    &__menu-link {
+        font-size: 18px;
+        line-height: 125%;
+        text-transform: uppercase;
+        position: relative;
+        padding-left: 20px;
+    }
+    &__menu-link::before {
+        position: absolute;
+        content: "";
+        width: 14px;
+        height: 2px;
+        background-color: $green;
+        left: 0;
+        top: 50%;
+    }
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        margin-left: 86px;
+    }
+    &__contacts-address {
+        position: relative;
+        padding-left: 30px;
+        font-family: 'Proxima Nova';
+        font-size: 18px;
+        line-height: 125%;
+        margin-bottom: 1px;
+    }
+    &__contacts-address::before {
+        position: absolute;
+        content: "";
+        width: 24px;
+        height: 24px;
+        background: center / cover no-repeat url(../img/address.svg);
+        left: 0;
+    }
+    &__contacts-time {
+        position: relative;
+        padding-left: 30px;
+        font-family: 'Proxima Nova';
+        font-size: 18px;
+        line-height: 125%;
+        margin-bottom: 4px;
+    }
+    &__contacts-time::before {
+        position: absolute;
+        content: "";
+        width: 24px;
+        height: 24px;
+        background: center / cover no-repeat url(../img/calendar.svg);
+        left: 0;
+    }
+    &__contacts-phone {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        position: relative;        
+        padding-left: 30px;
+        color: $green;
+        font-size: 18px;
+        line-height: 125%;
+    }
+    &__contacts-phone::before {
+        position: absolute;
+        content: "";
+        width: 24px;
+        height: 24px;
+        background: center / cover no-repeat url(../img/phone-green.svg);
+        left: 0;
+        top: 0;
+    }
+    &__contacts-socials {
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 7px;
+        .socials {
+            &__text {
+                font-family: 'Proxima Nova';
+                font-size: 18px;
+                line-height: 125%;
+            }
+        }
+    }
+    &__bottom {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__bottom-company {
+        font-family: 'Proxima Nova';
+        font-size: 14px;
+        line-height: 120%;
+    }
+    &__bottom-glyanec {        
+        padding-left: 23px;
+        position: relative;
+        font-family: 'Cuprum';
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.15px;
+        text-transform: uppercase;
+        padding-bottom: 3px;
+    }
+    &__bottom-glyanec::before {
+        position: absolute;
+        content: "";
+        width: 20px;
+        height: 21px;
+        background: center / cover no-repeat url(../img/glyanec.svg);
+        left: 0;
+    }
+    &__img {
+        position: absolute;
+        right: 0;
+        z-index: -10;
+    }
+    &__arrow-up-link {
+        position: absolute;
+        top: -18px;
+        left: 25px;
+    }
+}
+.logo-svg {
+    fill: $white;
+}
+.socials {
+    &__link:first-child {  
+        margin-left: 2px;
+    }
+    &__link-svg { 
+        fill: $white;
+    }
+}

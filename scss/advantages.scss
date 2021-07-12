@@ -1,0 +1,100 @@
+.advantages {
+    font-family: 'Proxima Nova Bold';
+    .container-fluid {
+        padding: 0;
+    }
+    &__inner {
+        margin: 0 auto 0;
+        padding: 100px 51px 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__slider {
+        margin-top: 2px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        max-width: 1818px;
+        position: relative;
+        .swiper-button-prev {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            left: 20px;
+            top: 50%;
+            z-index: 10;
+            cursor: pointer;
+        }
+        .swiper-button-prev::after {
+            display: none;
+        }
+        .swiper-button-next {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            right: 15px;
+            top: 50%;
+            z-index: 10;
+            cursor: pointer;
+        }
+        .swiper-button-next::after {
+            display: none;
+        }
+    }
+    &__slider-link {
+        max-width: 586px;
+    }
+    &__slider-item {
+        max-width: 586px;
+        height: 350px;
+        color: $white;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-start;  
+        position: relative;
+        overflow: hidden;
+        padding: 30px;
+    }
+    &__slider-item:hover {
+        .advantages__slider-item-general {
+            bottom: 30px;
+            gap: 0;
+            transition: all 0.5s ease-in-out;
+        }
+    }
+    .slider-item1 {
+        background: center / cover no-repeat url(../img/advantages__slide1.jpg);
+    }
+    .slider-item2 {
+        background: center / cover no-repeat url(../img/advantages__slide2.jpg);
+    }
+    .slider-item3 {
+        background: center / cover no-repeat url(../img/advantages__slide3.jpg);
+    }
+    &__slider-item-general {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: absolute;
+        bottom: -63px;
+        gap: 30px;
+    }
+    &__slider-item-title {
+        display: flex;
+        font-size: 36px;
+        line-height: 125%;
+        margin-bottom: 18px;
+        border-bottom: 3px solid $green;
+        text-align: left;
+    }
+    &__slider-item-text {
+        font-family: 'Proxima Nova';
+        max-width: 90%;
+        font-size: 18px;
+        line-height: 125%;
+    }
+}
+
