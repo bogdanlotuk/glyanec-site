@@ -156,23 +156,13 @@
         font-size: 14px;
         line-height: 120%;
     }
-    &__bottom-glyanec {        
-        padding-left: 23px;
-        position: relative;
+    &__bottom-company-name {    
         font-family: 'Cuprum';
         font-size: 14px;
         line-height: 16px;
         letter-spacing: 0.15px;
         text-transform: uppercase;
         padding-bottom: 3px;
-    }
-    &__bottom-glyanec::before {
-        position: absolute;
-        content: "";
-        width: 20px;
-        height: 21px;
-        background: center / cover no-repeat url(../img/glyanec.svg);
-        left: 0;
     }
     &__img {
         position: absolute;
